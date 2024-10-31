@@ -1,0 +1,471 @@
+/* Style the tab */
+.spfa_tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.spfa_logo_tab {
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #b3cccc;
+  padding:3px;
+}
+/* Style the buttons that are used to open the tab content */
+.spfa_tablinks {
+	color: black;
+  background-color: inherit;
+  text-decoration-color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.spfa_tablinks:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.spfa_tablinks.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.spfa_tabcontent {
+  all:initial;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} 
+
+#wp-admin-bar-frame_animation  {
+    content: '\f306';
+    top: 5px;
+    background-color: red;
+    
+}
+/*hidden class for hide elemnts on load*/
+.spfahidden{
+  display: none;
+  background-color: gray;
+}
+/*highlight class*/
+.spfa_mouseOn{
+  /*background-color: #bcd5eb !important;*/
+  outline: 4px solid #5166bb !important;
+}
+.spfa_trigger_mouseOn{
+  /*background-color: #bcd5eb !important;*/
+  outline: 4px solid #ff0000 !important;
+}
+/*set style for instruction box*/
+#spfa_instruction_box {
+	top: 0px;
+	position: sticky;
+	width:auto;
+	height:auto;
+  background-color: #6699ff;
+  color:black;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 5px solid black;
+}
+
+#spfa_instruction_box_text{
+    width: auto; 
+    height: auto;
+    color: black;
+    margin:5px;
+    position: absolute;
+    left: 40%;
+    font-size: 200%;
+}
+
+#spfa_trigger_instruction_box {
+  top: 0px;
+  position: sticky;
+  padding-bottom: 20px;
+  width:auto;
+  height:auto;
+  background-color: red;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 5px solid black;
+}
+
+#spfa_trigger_instruction_box_text{
+    width: auto; 
+    height: auto;
+    color: white;
+    margin:5px;
+    position: absolute;
+    left: 32%;
+    font-size: 200%;
+}
+
+#spfa_instruction_box_close_button:before {
+	content: 'x'; 
+	font-size: 40px;
+	font-weight: 300;
+	font-family: Arial, sans-serif;
+	color:black;
+	width:30px;
+
+	background-color:none;
+	border:2px solid black;
+	position:absolute;
+	top:10px;
+	right: 20px;
+}
+
+#spfa_instruction_box_trigger_close_button:before {
+  content: 'x'; 
+  font-size: 40px;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+  color:black;
+  width:30px;
+  background-color:none;
+  border:2px solid black;
+  position:absolute;
+  top:10px;
+  right: 20px;
+}
+
+#spfa_instruction_box_close_button:hover {
+	background-color:blue;
+	font-size: 35px;
+	font-weight: 400;
+}
+
+#spfa_instruction_box_trigger_close_button:hover {
+  background-color:blue;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+/*set style for editor box*/
+#spfa_tabs_div {
+  all: initial;
+	position:absolute;
+  top: 700px;
+  left:300px;
+  width:520px;
+  height:470px;
+  /*margin:100px;*/
+  background-color: #ccc; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 5px solid black;
+  overflow: auto;
+  white-space:nowrap;
+
+}
+
+/*set style for selector box and text*/
+#spfa_selector_div{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*border: 1px solid black;*/
+}
+#spfa_selector_text{
+  width:350px;
+  background-color: white;
+}
+
+#spfa_trigger_selector_div{
+  text-align: left;
+}
+
+#spfa_trigger_selector_text{
+  width:50%;
+  background-color: white;
+}
+
+#spfa_frame_time_input{
+  width:100px;
+  height:25px;
+}
+
+#spfa_group_init_visibility{
+  float: left;
+  width: 90%;
+  margin:10px;
+  padding: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+#init_visibility_radio_hide{
+  margin-left: 20px;
+}
+
+#spfa_init_visibility_label{
+  float: left;
+  width: 90%;
+  margin-left:10px;
+  margin-bottom: -10px;
+  overflow: hidden;
+}
+
+/*set style for progress bar*/
+#spfa_tbl_label_id{
+ margin-top: 10px;
+}
+
+#spfa_radio_box{
+	margin-top: 15px;
+  margin-bottom: 5px;
+}
+#spfa_radio_box2{
+  margin-bottom: 5px;
+}
+#spfa_radio_box3{
+  margin-bottom: 20px;
+}
+#spfa_rad1{
+	margin-left: 10px;
+}
+#spfa_rad2{
+	margin-left: 10px;
+}
+#spfa_rad1_1{
+	margin-left: 10px;
+}
+#spfa_rad2_2{
+	margin-left: 10px;
+}
+#spfa_rad1_3{
+  margin-left: 10px;
+}
+#spfa_rad2_3{
+  margin-left: 10px;
+}
+#spfa_progress_bar_box{
+	padding-top: 10px;
+	padding-bottom: 10px;
+  height: 50px;
+}
+
+#spfa_progress_bar{
+  background-color: red;
+  height: 30px;
+  width:10px;
+}
+#spfa_wrapper_table_id{
+  width:470px;
+  height:110px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #a6a6a6;
+  border-radius: 5px;
+
+  white-space:nowrap;
+  
+}
+/*set style for frame table*/
+#spfa_frame_table_id{
+ margin-bottom: 10px;
+ width: 450px;
+ height:20px;
+ margin-right: auto;
+ margin-left: 10px;
+ padding-top: 10px;
+ border:0px solid transparent;
+ display: inline-block;
+ 
+}
+
+/*set style for frame boxes*/
+.spfa_af_cell_style{
+  padding: 2px;
+	overflow:hidden;
+  border: 2px solid gray;
+  margin: 2px;
+  height:70px;
+  width: 80px;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.spfa_add_cell_style{
+  padding: 2px;
+  overflow:hidden;
+  background-color: white;
+  border: 2px solid gray;
+  margin: 2px;
+  height:70px;
+  width: 80px;
+  display: inline-block;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/*set style for buttons*/
+#spfa_table_button_id{
+  margin-top: 10px;
+	float: left;
+  width: auto;
+  border:none;
+}
+
+#spfa_sub_table_id{
+	 float:right;
+	 width: auto;
+   margin: 10px;
+}
+
+.spfa_button_style{
+  all:initial;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #b8b8b8; 
+  color: black; 
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.spfa_trigger_selector_button{
+  all:initial;
+  height:15px;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #b8b8b8; 
+  color: black; 
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.spfa_trigger_selector_button:hover{
+  background-color: #555555;
+  color: white;
+}
+
+.spfa_button_style:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.spfa_list_label{
+  all:initial;
+	width:50%;
+  height:25px;
+	margin-top:5px;
+  margin-bottom:5px;
+  margin-left: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  text-align: left;
+}
+.spfa_list_button{
+  all:initial;
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left: 5px;
+  width:10%;
+  height:20px;
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #b8b8b8; 
+  color: black; 
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.spfa_list_button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.spfa_list_id{
+  all:initial; 
+}
+.spfa_list_row{
+  all:initial;
+	list-style-type: none;
+}
+
+/*dialog*/
+
+
+#spfa_dialog_effect_selection{
+  width: 90%;
+  padding: 10px;
+  margin:10px;
+  float:left;
+  border: 1px solid black;
+  clear: both;
+  overflow: hidden;
+}
+
+#second_spfa_dialog_effect_selection{
+  float: left;
+  width: 90%;
+  margin:10px;
+  padding: 10px;
+  border: 1px solid black;
+  float:left;
+  overflow: hidden;
+}
+
+#spfa_dialog_effect_time{
+  width:80%;
+  float:left;
+  margin:10px;
+  overflow: hidden;
+}
+#spfa_options_id{
+  float: left;
+  margin-top: 10px;
+  width: auto;
+}
+
+#second_spfa_options_id{
+  float: left;
+  margin-top: 10px;
+  width: auto;
+}
+
+#spfa_dequeue_id{
+  padding-top: 10px;
+  float: left;
+  width: 90%;
+}
+
+.spfa_table_button_class{
+  border: none;
+}
+
+.spfa_database_table_th{
+  background-color:green; 
+  border: 5px solid black; 
+  padding: 8px;
+}
